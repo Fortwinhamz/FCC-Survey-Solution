@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Survey Form</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="heading">
+        <div class="container">
+            <h1 id="title">RemoteSkills Survey</h1>
+            <p id="description">Let's help you in your journey into the digital skills world</p>
+        </div>
+    </div>
+
+    <form id="survey-form">
+        <div class="personal-info">
+        <div class="container">
+          <ul class="personal-info__list">
+              <li>
+        <label for="name" id="name-label">Name</label>
+         <input type="text" 
+                class="personal-info__data"
+                id="name" 
+                name="name" 
+                placeholder="Name"
+                required>
+              </li>
+              <li>
+        <label for="email" id="email-label">Email</label>
+         <input type="email" 
+                class="personal-info__data"
+                id="email" 
+                name="email" 
+                placeholder="Email@"
+                required>
+              </li>
+              <li>
+        <label for="number" id="number-label">Age</label>
+         <input type="number" 
+                class="personal-info__data"
+                id="number"
+                name="age"  
+                min="1" max="115" 
+                placeholder="25"
+                required>
+              </li>
+          </ul>    
+        </div>
+        </div>
+         
+
+        <div class="wrapper">
+            <div class="platform"> 
+                <div class="container">
+               <h3>Which platform are you learning from?</h3>
+             <select id="dropdown" name="Youtube">
+               <option value="Freecodecamp">Freecodecamp</option>
+               <option value="Hubspot">Hubspot</option>
+               <option value="Udemy">Udemy</option>
+              </select>
+             </div>
+            </div>
+              </div>
+             
+           <div class="wrapper">
+            <div class="platform">
+              <div class="container">
+                <h3>Which are the things you need to learn?</h3>
+               <select id="destintion" name="desination">
+                 <optgroup label="Provinces">
+                 <option value="bc"> Electricity</option>
+                 <option value="ab">Internet</option>
+                 <option value="sk"> Ability to focus</option>
+                 <option value="sk"> Resources</option>
+                   </optgroup>
+              </select>
+             </div>
+        </div>
+
+        <div class="container">
+            <div class="options">
+        <fieldset>
+          <legend>
+            <h3>Which Of these Platforms Most Interests You? (choose one)</h3>
+            </legend>
+          <ul class="food__list"> 
+            <li>
+          <label for="Udemy">Udemy
+            <input type="radio" name="new-options" id="Udemy" value="Udemy">
+          </label>
+            </li>
+            <li>
+          <label for="">Youtube
+        <input type="radio" name="new-options" id="Youtube" value= "Youtube">
+             </label>
+            </li>
+            <li>
+          <label for="Hubspot">Hubspot
+             <input type="radio" name="new-options" id="Hubspot" value= "Hubspot">
+             </label>
+            </li>
+            <li>
+          </ul>
+        </fieldset>
+           </div>
+             </div>
+        <div class="container diet">
+          <h3>Do you have any requirements?</h3>
+          <ul class="requirements">
+            <li>
+          <label for="no-preference"> No preference <input type= "checkbox" id="no-preference" name="preference" value="no-preference"></label>
+            </li>
+           <li>
+            <label for="nut-allergy">Electrcity<input type= "checkbox" id="nut-allergy" name="preference" value="nut-allergy"></label>
+            </li>
+          </ul>
+        </div>
+            
+          <div class="container">
+            <footer class="comments">
+             <label for="comments">Have a suggestion? We would love to hear your feedback!</label>
+              
+               <textarea id="comments"></textarea>
+              <button type="submit" id="submit" value="submit">Submit</button>
+            </footer>
+           </div>
+          </div>
+         </form>
+</body>
+</html>
